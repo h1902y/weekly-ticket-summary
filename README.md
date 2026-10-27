@@ -109,6 +109,8 @@ Want a page you can drop next week's file into? In the same chat, ask Claude: "T
 
 Before you upload a real export, check your company's rules on AI tools and customer data.
 
+Want to build your own, for your own task? Live workshop: [h1902y.com/workshop](https://h1902y.com/workshop?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary).
+
 ## More like this
 
 A new personal app every Tuesday, plus the free 5-day course, *Build your first AI app in 5 days*: [h1902y.com/library](https://h1902y.com/library?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary).
