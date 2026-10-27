@@ -111,9 +111,10 @@ Before you upload a real export, check your company's rules on AI tools and cust
 
 ## More like this
 
-One new personal app every week, plus the free 5-day course, *Build your first AI app in 5 days*: [h1902y.com/library](https://h1902y.com/library?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary).
+A new personal app every Tuesday, plus the free 5-day course, *Build your first AI app in 5 days*: [h1902y.com/library](https://h1902y.com/library?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary).
 
-All apps: [h1902y/awesome-personal-apps](https://github.com/h1902y/awesome-personal-apps).
+- All apps: [h1902y/awesome-personal-apps](https://github.com/h1902y/awesome-personal-apps).
+- **Ask for the next app** (the weekly task you'd hand off) or **show what you built**: [Discussions](https://github.com/h1902y/awesome-personal-apps/discussions).
 
 ## Licence
 
