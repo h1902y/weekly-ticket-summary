@@ -2,7 +2,7 @@
 
 Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.
 
-A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work.
+A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.0.0.
 
 ## Install the skill
 
@@ -14,7 +14,7 @@ A skill is a saved set of instructions Claude uses whenever the task comes up, s
 2. In Claude, go to **Customize > Skills**, choose **+ > Create skill > Upload a skill**, pick the zip, then turn the skill on.
 3. Start a new chat, attach your export and say "weekly ticket summary".
 
-Works on any Claude plan, Free included. Skills need **Code execution** turned on in **Settings > Capabilities**. On a work plan, your admin may need to allow skills first.
+Works on any Claude plan, Free included. Skills need **Code execution** turned on in **Settings > Capabilities**. On a work plan, your admin may need to allow skills first. **New version?** Remove the old skill in **Customize > Skills**, then upload the new zip.
 
 **In Claude Code:**
 
@@ -23,7 +23,7 @@ Works on any Claude plan, Free included. Skills need **Code execution** turned o
 /plugin install weekly-ticket-summary@personal-apps
 ```
 
-Then confirm **Install**.
+Then confirm **Install**. To get new versions automatically: run `/plugin`, open **Marketplaces > personal-apps** and choose **Enable auto-update**.
 
 The skill, prompt and sample data are also on GitHub: [h1902y/weekly-ticket-summary](https://github.com/h1902y/weekly-ticket-summary).
 

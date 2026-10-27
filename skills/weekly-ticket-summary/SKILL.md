@@ -1,6 +1,8 @@
 ---
 name: weekly-ticket-summary
 description: Turns last week's support ticket export (CSV or pasted rows) into a short weekly summary a support team can read in two minutes, with tickets grouped by theme and counted, one real ticket quoted per theme, and urgent or overdue tickets listed first with how long they have waited. Use when someone shares a help desk export and asks for a weekly ticket summary, review, digest or triage.
+metadata:
+  version: 1.0.0
 ---
 
 # Weekly ticket summary
