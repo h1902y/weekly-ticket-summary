@@ -1,0 +1,18 @@
+{
+  "name": "weekly-ticket-summary",
+  "version": "1.0.0",
+  "description": "Turns last week's support ticket export (CSV or pasted rows) into a short weekly summary a support team can read in two minutes, with tickets grouped by theme and counted, one real ticket quoted per theme, and urgent or overdue tickets listed first with how long they have waited. Use when someone shares a help desk export and asks for a weekly ticket summary, review, digest or triage.",
+  "author": {
+    "name": "h1902y",
+    "email": "mail@h1902y.com",
+    "url": "https://h1902y.com"
+  },
+  "homepage": "https://h1902y.com/library/weekly-ticket-summary",
+  "repository": "https://github.com/h1902y/weekly-ticket-summary",
+  "license": "MIT",
+  "keywords": [
+    "personal-app",
+    "h1902y-library",
+    "support"
+  ]
+}

@@ -1,0 +1,21 @@
+name: This app broke
+description: The app gave a wrong or missing result.
+title: "Broke: "
+labels: [broke]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you ask, and what came back?
+      description: Don't paste real customer or company data. The sample data is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you run it?
+      options: [claude.ai, Claude Code, Claude desktop, other]
