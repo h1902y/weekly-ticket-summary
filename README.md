@@ -2,7 +2,7 @@
 
 Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.
 
-A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.0.0.
+A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.1.0.
 
 ## Install the skill
 
