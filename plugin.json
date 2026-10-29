@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "weekly-ticket-summary",
+  "version": "1.0.0",
+  "description": "Turns last week's support ticket export (CSV or pasted rows) into a short weekly summary a support team can read in two minutes, with tickets grouped by theme and counted, one real ticket quoted per theme, and urgent or overdue tickets listed first with how long they have waited. Use when someone shares a help desk export and asks for a weekly ticket summary, review, digest or triage.",
+  "author": {
+    "name": "h1902y",
+    "email": "mail@h1902y.com",
+    "url": "https://h1902y.com"
+  },
+  "homepage": "https://h1902y.com/library/weekly-ticket-summary",
+  "repository": "https://github.com/h1902y/weekly-ticket-summary",
+  "license": "MIT",
+  "keywords": [
+    "personal-app",
+    "h1902y-library",
+    "support"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Weekly ticket summary",
+        "shortDescription": "Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.",
+        "developerName": "h1902y",
+        "category": "Productivity",
+        "websiteURL": "https://h1902y.com/library/weekly-ticket-summary",
+        "privacyPolicyURL": "https://h1902y.com/privacy",
+        "termsOfServiceURL": "https://h1902y.com/terms",
+        "defaultPrompt": [
+          "Run weekly ticket summary on the file I share."
+        ]
+      }
+    }
+  }
+}

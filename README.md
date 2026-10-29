@@ -10,7 +10,7 @@ A skill is a saved set of instructions Claude uses whenever the task comes up, s
 
 **In Claude (web or desktop app):**
 
-1. Download [weekly-ticket-summary-skill.zip](./weekly-ticket-summary-skill.zip).
+1. Download [weekly-ticket-summary-skill.zip](https://github.com/h1902y/weekly-ticket-summary/releases/latest/download/weekly-ticket-summary-skill.zip).
 2. In Claude, go to **Customize > Skills**, choose **+ > Create skill > Upload a skill**, pick the zip, then turn the skill on.
 3. Start a new chat, attach your export and say "weekly ticket summary".
 
@@ -110,6 +110,12 @@ Want a page you can drop next week's file into? In the same chat, ask Claude: "T
 Before you upload a real export, check your company's rules on AI tools and customer data.
 
 Want to build your own, for your own task? Live workshop: [h1902y.com/workshop](https://h1902y.com/workshop?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary).
+
+## Other agents
+
+- **Codex:** `codex plugin marketplace add h1902y/awesome-personal-apps`, then `codex plugin add weekly-ticket-summary@personal-apps`.
+- **Cursor, Copilot, Gemini CLI and other `.agents` readers:** copy `skills/weekly-ticket-summary/` to `~/.agents/skills/`.
+- **Every app at once:** install `personal-apps@personal-apps` instead. Pick one or the other: with both, the same skill shows twice.
 
 ## More like this
 
