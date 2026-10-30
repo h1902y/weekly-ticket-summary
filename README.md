@@ -2,7 +2,7 @@
 
 Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.
 
-A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.2.2.
+A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.2.3.
 
 ## Install the skill
 
@@ -105,7 +105,7 @@ And the app Claude built from the prompt in the video, urgent tickets first:
 
 ## What we changed
 
-Version 1.2.2: the report is the same, word for word. Underneath, the app now runs on h1902y's shared engine, which works out every number in code and checks each AI step before it keeps it. It also adds four helpers you can ask for by name: an analyst, triage, a reply drafter and a reporter.
+Version 1.2.3: the report is the same, word for word. Underneath, the app now runs on h1902y's shared engine, which works out every number in code and checks each AI step before it keeps it. It also adds four helpers you can ask for by name: an analyst, triage, a reply drafter and a reporter.
 
 ## Make it an app
 
