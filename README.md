@@ -2,7 +2,7 @@
 
 Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.
 
-A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.1.0.
+A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.2.2.
 
 ## Install the skill
 
@@ -41,7 +41,7 @@ A person still decides what to do. The app makes sure nobody gets missed.
 
 ## Steps
 
-1. **Export last week's tickets** from your help desk as a CSV. Keep the message, status, priority and "hours open" (or created date) columns. No export handy? Use the [sample tickets](data/sample-tickets.csv).
+1. **Export last week's tickets** from your help desk as a CSV. Keep the message, status, priority and "hours open" (or created date) columns. No export handy? Use the [sample tickets](skills/weekly-ticket-summary/scripts/sample/sample-tickets.csv).
 2. **Open a new chat in Claude** and attach the file.
 3. **Paste the prompt** below and send it.
 4. **Read "Reply to these first"** before anything else, and check two of the quotes against the file.
@@ -49,7 +49,7 @@ A person still decides what to do. The app makes sure nobody gets missed.
 
 ## The spec
 
-- **Input:** one week of tickets as a CSV export from any help desk (Zendesk, Freshdesk, Help Scout, Intercom or a spreadsheet). Try it first with the [sample tickets](data/sample-tickets.csv): 40 made-up tickets from a made-up company.
+- **Input:** one week of tickets as a CSV export from any help desk (Zendesk, Freshdesk, Help Scout, Intercom or a spreadsheet). Try it first with the [sample tickets](skills/weekly-ticket-summary/scripts/sample/sample-tickets.csv): 40 made-up tickets from a made-up company.
 - **Output:** three parts, in the same shape every week: *Reply to these first*, *Themes* (count, share and one quote each) and a 3–5 sentence *Summary*.
 - **Rules:**
   - urgent means high priority, past its target time, or an angry or repeat customer;
@@ -102,6 +102,10 @@ Sync was the biggest theme with 8 of 40 tickets (20%), and it holds 4 of the 10 
 And the app Claude built from the prompt in the video, urgent tickets first:
 
 ![Urgent and overdue tickets, sorted, with how long each has waited](screens/screen-urgent.webp)
+
+## What we changed
+
+Version 1.2.2: the report is the same, word for word. Underneath, the app now runs on h1902y's shared engine, which works out every number in code and checks each AI step before it keeps it. It also adds four helpers you can ask for by name: an analyst, triage, a reply drafter and a reporter.
 
 ## Make it an app
 
