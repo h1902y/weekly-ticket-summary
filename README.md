@@ -2,7 +2,7 @@
 
 Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.
 
-A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.2.6.
+A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.2.7.
 
 ## Install the skill
 
@@ -25,6 +25,8 @@ Skills need **Code execution** turned on in **Settings > Capabilities**. On a Te
 
 Then confirm **Install**. To get new versions automatically: run `/plugin`, open **Marketplaces > personal-apps** and choose **Enable auto-update**.
 
+**What it runs and keeps:** in Claude Code and the Claude app, one Python script, which does the counting and checks. In Claude Code it keeps its data on your computer, in `~/.h1902y/weekly-ticket-summary/` (or the plugin's `$CLAUDE_PLUGIN_DATA` folder); in the Claude app, in that chat's code sandbox. The script sends nothing; Claude still reads your export in the chat, as with any file you share. On Cloud, the app and its data stay in your own Cloudflare account, and its AI runs on Workers AI there. The app never contacts h1902y; it only fetches tickets from a help desk you connect. Its page loads fonts from Google Fonts.
+
 The skill, prompt and sample data are also on GitHub: [h1902y/weekly-ticket-summary](https://github.com/h1902y/weekly-ticket-summary).
 
 ## What it does
@@ -45,7 +47,7 @@ A person still decides what to do. The app makes sure nobody gets missed.
 2. **Open a new chat in Claude** and attach the file.
 3. **Paste the prompt** below and send it.
 4. **Read "Reply to these first"** before anything else, and check two of the quotes against the file.
-5. **Next week:** drop the new export into the same chat and ask again, or install the skill (below) and just say "weekly ticket summary". You get the same shape every week.
+5. **Next week:** drop the new export into the same chat and ask again, or install the skill from **Where do you want it?** and just say "weekly ticket summary". You get the same shape every week.
 
 ## The spec
 
@@ -63,11 +65,11 @@ A person still decides what to do. The app makes sure nobody gets missed.
 Build me a small app from this ticket export. Group the tickets by theme, count each theme and quote one real ticket for each. Put the urgent and overdue ones on top, with how long each has been waiting. Write a short summary my team can read.
 ```
 
-This is the prompt from the video. The skill below holds a longer version with the rules spelled out, so the result keeps the same shape every week.
+This is the prompt from the video. The skill is the app: a script does every count and sort and checks Claude's answers against the export, and Claude does the finding and drafting (which customers are angry or repeat, the themes, the quotes and the summary), so the result keeps the same shape every week.
 
 ## Example output
 
-Claude may build a small interactive page; the content is the same. What the skill gave back for the sample tickets (the urgent list is cut to five of ten):
+What the skill gave back for the sample tickets (the urgent list is cut to five of ten):
 
 **Weekly ticket summary: 40 tickets**
 
@@ -105,7 +107,7 @@ And the app Claude built from the prompt in the video, urgent tickets first:
 
 ## What we changed
 
-Version 1.2.3: the report is the same, word for word. Underneath, the app now runs on h1902y's shared engine, which works out every number in code and checks each AI step before it keeps it. It also adds four helpers you can ask for by name: an analyst, triage, a reply drafter and a reporter.
+Version 1.2.7: the report is the same. A percentage the AI writes keeps its % sign: "a 20% share", not "a 20 share". Numbers written as words are checked like digits: a summary saying "nine tickets are urgent" when the app counts 10 is sent back, as "9" already was. An empty summary is sent back too.
 
 ## Make it an app
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "weekly-ticket-summary",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.",
   "author": {
     "name": "h1902y",
