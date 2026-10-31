@@ -2,7 +2,7 @@
 
 Drop last week's help desk export into Claude and get the themes, counts and urgent tickets your team should read first.
 
-A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.2.3.
+A personal app from the [h1902y Library](https://h1902y.com/library/weekly-ticket-summary?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary): one small AI app for one weekly task. Free to use at work. Version 1.2.6.
 
 ## Install the skill
 
@@ -10,11 +10,11 @@ A skill is a saved set of instructions Claude uses whenever the task comes up, s
 
 **In Claude (web or desktop app):**
 
-1. Download [weekly-ticket-summary-skill.zip](https://github.com/h1902y/weekly-ticket-summary/releases/latest/download/weekly-ticket-summary-skill.zip).
-2. In Claude, go to **Customize > Skills**, choose **+ > Create skill > Upload a skill**, pick the zip, then turn the skill on.
+1. Go to **Customize > Plugins**, choose **Add > Add marketplace** and enter `h1902y/awesome-personal-apps`.
+2. Choose **Add** on Weekly ticket summary. Turn on **Sync automatically** for the marketplace so new versions arrive by themselves.
 3. Start a new chat, attach your export and say "weekly ticket summary".
 
-Works on any Claude plan, Free included. Skills need **Code execution** turned on in **Settings > Capabilities**. On a work plan, your admin may need to allow skills first. **New version?** Remove the old skill in **Customize > Skills**, then upload the new zip.
+Skills need **Code execution** turned on in **Settings > Capabilities**. On a Team or Enterprise plan, an Owner may need to allow adding marketplaces first.
 
 **In Claude Code:**
 
@@ -115,8 +115,16 @@ Before you upload a real export, check your company's rules on AI tools and cust
 
 Want to build your own, for your own task? Live workshop: [h1902y.com/workshop](https://h1902y.com/workshop?utm_source=github&utm_medium=readme&utm_campaign=weekly-ticket-summary).
 
+## What it runs and keeps
+
+- **Runs:** one Python script, `skills/weekly-ticket-summary/scripts/app.py`, with the files beside it: standard library only, no packages to install. Claude runs it with `uv run` (or `python3`); no hooks, no servers, nothing in the background.
+- **Reads:** only the files you hand it, and the sample in `scripts/sample/`.
+- **Keeps:** its data in one SQLite file where it runs: `~/.h1902y/weekly-ticket-summary/` on your computer (in Claude Code, the plugin's own data folder; in a Claude chat, that chat's code sandbox). Delete the folder to remove it.
+- **Sends:** nothing. It makes no network calls; your data leaves only through what you paste or send yourself.
+
 ## Other agents
 
+- **Claude (web or desktop app):** In Claude, go to **Customize > Plugins**, choose **Add > Add marketplace** and enter `h1902y/awesome-personal-apps`. Then choose **Add** on Weekly ticket summary, and turn on **Sync automatically** for the marketplace to get new versions. The app's script needs **Code execution** on in **Settings > Capabilities**; on a Team or Enterprise plan, an Owner may need to allow adding marketplaces first.
 - **Codex:** `codex plugin marketplace add h1902y/awesome-personal-apps`, then `codex plugin add weekly-ticket-summary@personal-apps`.
 - **Cursor, Copilot, Gemini CLI and other `.agents` readers:** copy `skills/weekly-ticket-summary/` to `~/.agents/skills/`.
 - **Every app at once:** install `personal-apps@personal-apps` instead. Pick one or the other: with both, the same skill shows twice.
